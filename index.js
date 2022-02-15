@@ -28,6 +28,10 @@ app.get('/books', (req, res) => {
 app.post('/books', (req, res) => {
   // extrair informacoes do req.body
   const { title, author } = req.body;
+  // criando um if/else para quando criar um livro novo ter ou author ou title
+  if (!author || !title) {
+    res.status(422).json({ message: 'Faltando title ou Author' });
+  }
   // calcular o novo id do livro que vai ser adicionado
   // pega o ultimo livro
   //doa array de livros eu pego o index igual ao tamanho total menos 1, desse ultimo livro pego id e faço mais
