@@ -8,13 +8,13 @@ const PORT = 3000;
 
 app.use(bodyParser.json());
 
-//=============================pega todos os livros=====================================//
+//====pega todos os livros====//
 app.get('/books', getBooks);
-//============================filtra livros por id================================//
+//====filtra livros por id====//
 // app.get('/', (req, res) => {
 
 // });
-//===========================adiciona um novo livro=====================================//
+//====adiciona um novo livro====//
 app.post('/books', (req, res) => {
   // extrair informacoes do req.body
   const { title, author } = req.body;
@@ -38,7 +38,7 @@ app.post('/books', (req, res) => {
   // vamos dar um status 201, que quer dizer que o livro foi criado
   res.status(201).json(newBook);
 });
-//=================================atualiza os livros==================================//
+//====atualiza os livros====//
 app.put('/books/:id', (req, res) => {
   // extrair dados da request parametros de rota
   // req.params contem a chave id
@@ -60,7 +60,7 @@ app.put('/books/:id', (req, res) => {
   books[bookIndex] = book;
   res.status(200).json(book);
 });
-//====================================apaga livros=====================================//
+//====apaga livros====//
 app.delete('/books/:id', (req, res) => {
   const { id } = req.params;
   const bookIndex = books.findIndex(book => `${book.id}` === id);
