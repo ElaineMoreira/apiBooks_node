@@ -1,0 +1,32 @@
+[
+  { 
+    "id": 1, 
+    "title": "Peça-me o que quiser", 
+    "author": "megan maxwell"
+  },
+  {
+    "id": 2,
+    "title": "O Terapeuta",
+    "author": "valentina k michael"
+  },
+  {
+    "id": 3,
+    "title": "Admirador Secreto",
+    "author": "valentina k michael"
+  },
+  {
+    "id": 4,
+    "title": "O Juiz",
+    "author": "Katherine Laccomt"
+  },
+  {
+    "id": 5,
+    "title": "Veredito Final",
+    "author": "Katherine Laccomt"
+  },
+  {
+    "id": 6,
+    "title": "Eu Sou Eric Zimmerman",
+    "author": "megan maxwell"
+  }
+]
