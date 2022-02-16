@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const books = require('./books.json');
+const getBooks = require('./middlewares/getBooks');
 
 const app = express();
 const PORT = 3000;
@@ -8,10 +9,7 @@ const PORT = 3000;
 app.use(bodyParser.json());
 
 //=============================pega todos os livros=====================================//
-app.get('/books', (req, res) => {
-  // usar json para retorna a resposta em json
-  res.status(200).json({ books });
-});
+app.get('/books', getBooks);
 //============================filtra livros por id================================//
 // app.get('/', (req, res) => {
 
