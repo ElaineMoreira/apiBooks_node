@@ -1,6 +1,5 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const books = require('./books.json');
 const getBooks = require('./middlewares/getBooks');
 const postBooks = require('./middlewares/postBooks');
 const putBooks = require('./middlewares/putBooks');
