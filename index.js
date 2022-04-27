@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.get('/books', getBooks);
 //====filtra livros por autor====//
 app.get('/books/search', getSearchBooks);
-//====adiciona um novo livro====//
+//====adiciona um novo livro====//==
 app.post('/books', postBooks);
 //====atualiza os livros====//
 app.put('/books/:id', putBooks);
